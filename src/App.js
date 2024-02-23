@@ -3,15 +3,39 @@ import { Button } from "./component";
 
 function App() {
   return (
-    <>
+    <div className="bg-teal-50 w-full min-h-full h-fit py-7 flex flex-col gap-y-7 items-center">
       <Button
         eventClick={() => {
-          console.log("Button was clicked");
+          alert("Button was clicked");
         }}
         btnName="Click Me"
-        customClass="text-3xl font-bold underline hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
       />
-    </>
+
+      <Button
+        eventClick={() => {
+          alert("Button was clicked");
+        }}
+        btnName="Click Me"
+      />
+      <Button
+        eventClick={() => {
+          alert("Button was clicked");
+        }}
+        btnName="Click Me"
+      />
+      <Button
+        eventClick={() => {
+          alert("Button was clicked");
+        }}
+        btnName="Click Me"
+      />
+      <Button
+        eventClick={() => {
+          alert("Button was clicked");
+        }}
+        btnName="Click Me"
+      />
+    </div>
   );
 }
 
