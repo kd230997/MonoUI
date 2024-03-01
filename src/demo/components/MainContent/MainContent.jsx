@@ -1,7 +1,13 @@
 import React from "react";
 
-const MainContent = ({ name }) => {
-  return <div className="px-2 py-7 w-5/6 h-fit shadow-sm bg-yellow-100">MainContent</div>;
+const MainContent = ({ className }) => {
+  return (
+    <div
+      className={`${className} px-2 py-7`}
+    >
+      MainContent
+    </div>
+  );
 };
 
 export default MainContent;

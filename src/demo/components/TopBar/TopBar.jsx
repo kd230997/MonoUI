@@ -1,7 +1,9 @@
 import React from "react";
 
-const TopBar = ({ name }) => {
-  return <div className="py-7 shadow-sm bg-teal-200 max-w-full h-1/6">TopBar</div>;
+const TopBar = ({ className }) => {
+  return (
+    <div className={`${className} px-5 py-7`}>TopBar</div>
+  );
 };
 
 export default TopBar;
